@@ -1,0 +1,12 @@
+/* text-overflow */
+@mixin cn-wrap {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+@mixin word-dot {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

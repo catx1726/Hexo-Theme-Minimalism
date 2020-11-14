@@ -1,0 +1,86 @@
+/* main_container-start */
+.main_container,
+.header_container,
+.footer_container {
+  font-size: 2rem;
+}
+
+.main_container {
+  margin-top: 10rem;
+  .content_container {
+    width: 65vw;
+    position: relative;
+    padding-left: 30vw;
+    .directory_container {
+      top: 20px;
+      right: 5vw;
+      width: 10vw;
+      text-align: end;
+      position: absolute;
+    }
+    .post {
+      width: 100vw;
+      max-width: 70%;
+      min-width: 300px;
+      position: relative;
+    }
+  }
+  .bar-line-dot {
+    & .line::before,
+    & .line::after,
+    & .circle::after,
+    & .circle::before {
+      content: '';
+      height: 5rem;
+      width: 5rem;
+      top: -5rem;
+      display: block;
+      position: absolute;
+      background-color: transparent;
+      border-bottom: 1px solid black;
+    }
+    & .circle::after,
+    & .circle::before {
+      border-radius: 50%;
+      transform: scale(0.8);
+      border: 1px solid black;
+    }
+    & .circle::before {
+      height: 2.5rem;
+      top: -4rem;
+      border-radius: 0 0 5rem 5rem;
+      transform: rotate(60deg);
+    }
+    & .circle::after,
+    & .line::before {
+      left: 25%;
+    }
+    & .circle::before,
+    & .line::after {
+      right: 5vw;
+    }
+    & .line::before {
+      border-right: 1px solid black;
+    }
+    & .line::after {
+      border-left: 1px solid black;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main_container {
+    margin-top: 5rem;
+    .content_container {
+      width: 100%;
+      padding: 0;
+      .directory_container,
+      .bar-line-dot {
+        opacity: 0;
+      }
+      .post {
+        max-width: 100%;
+      }
+    }
+  }
+}

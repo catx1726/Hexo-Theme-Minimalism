@@ -1,12 +1,13 @@
 # html lang
-language: en
+language: ch
 
 # main menu navigation
 menu:
   Home: /
-  About: /about
-  Contact: /contact
-  Archives: /archives
+#  Article: /article
+#  BookCase: /bookcase
+#  PrivateRoom: /room
+#  Abbbbbbbout: /about
 
 # stylesheets loaded in the <head>
 stylesheets:

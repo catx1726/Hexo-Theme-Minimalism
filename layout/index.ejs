@@ -1,6 +1,20 @@
+<!-- https://github.com/hexojs/hexo/issues/2645 -->
+<!-- https://github.com/hexojs/hexo/issues/959 -->
+<!-- <% if (page.layout==='layout')  {%>
+  <%- partial('book_case_layout/index.ejs') %>
+  <% } %>
+  <% if (page.layout==='article')  {%>
+  <%- partial('path_to_products.ejs') %>
+  <% } %>
+  <% if (page.layout==='bookcase')  {%>
+  <%- partial('path_to_products.ejs') %>
+  <% } %>
+  <% if (page.layout==='room')  {%>
+  <%- partial('path_to_products.ejs') %>
+  <% } %>
+  <% if (page.layout==='about')  {%>
+  <%- partial('path_to_products.ejs') %>
+  <% } %> -->
 
-<%-partial('partials/recent-posts')%>
 
-<div id="paginator">
-  <%-paginator()%>
-</div>
+<%- partial('article-list') %>
